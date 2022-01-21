@@ -44,15 +44,15 @@ const App = () => {
         <Text numberOfLines={1} style={styles.title}>
           {item.title}
         </Text>
+        <Text numberOfLines={1} style={styles.title}>
+          {item.title}
+        </Text>
 
         <Text numberOfLines={3} style={styles.desc}>
           {item.description}
         </Text>
 
-        <TouchableOpacity onPress={() => handleViewMore()}>
-          <Text style={{color: '#333'}}>View details</Text>
-        </TouchableOpacity>
-
+     
         <Modal animationType="slide" transparent={false} visible={showModal}>
 
           <TouchableOpacity style={{flex: 1, backgroundColor: 'red'}}>
